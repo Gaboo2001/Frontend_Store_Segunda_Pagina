@@ -1,0 +1,95 @@
+:root{
+    --primario: #9C27B0;
+    --primarioOscuro: #89119D;
+    --secundario: #FFCE00;
+    --blanco: #FFF;
+    --negro: #000;
+
+
+    --fuentePrincipal: "Staatliches", serif;
+    }
+/* Inicio Todo esto no debe faltar en ningun proyecto*/
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; 
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  /*Fin Todo esto no debe faltar en ningun proyecto*/
+  
+  /*Globales*/
+  body{
+    background-color: var(--primario); /*Color de fondo*/
+    font-size: 1.6rem; /*Base de la fuente*/
+    line-height: 1.5;/*Delineado a todo el proyecto*/
+  }
+  p{
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--blanco);  
+  }
+  a{
+    text-decoration: none; /*Se le quita el interlineado abajo en los enlaces*/
+  }
+  img{
+    max-width:100%;
+  }
+  .contendor{
+    max-width: 120rem; /**/
+    margin: 0 auto; /*Centrarlo (centrar el contenido)*/
+  }
+  h1,h2,h3 {
+    text-align: center; /*Texto alineado al centro*/
+    color: var(--secundario);
+    font-family: var(--fuentePrincipal);
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3.2rem;
+  }
+  h3 {
+    font-size: 2.4rem;
+  }
+  /*Header*/
+  .header{
+    display: flex;
+    justify-content: center;
+  }
+  .header__logo {
+    margin: 3rem 0; /*Margen hacia arriba primer valor y izquerda a derecha segundo valor */
+  } 
+  /*Footer*/
+  .footer{
+    background-color: var(--primarioOscuro);
+    padding: 1rem 0;
+    margin: 2rem 0;
+  }
+  .footer__texto {
+    font-family: var(--fuentePrincipal);
+    text-align: center;
+    font-size: 2.2rem;
+  }
+    
+  /*Navegacion*/
+  .navegacion {
+    background-color: var(--primarioOscuro);
+    padding: 1rem 0; /*Tamaño de la barra. El primer valor arriba y abajo segundo izquerda derecha*/ 
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /*Agrega separacion entre los enlaces*/
+  } 
+  .navegacion__enlace {
+    font-family: var(--fuentePrincipal);
+    color: var(--blanco);
+    font-size: 3rem; /*Tamaño de la letra*/
+  }
+  .navegacion__enlace--activo, 
+  .navegacion__enlace:hover{
+    color: var(--secundario); /*Se le agrega el color al enlace cuando estas encima de el*/
+  }
+
+   
